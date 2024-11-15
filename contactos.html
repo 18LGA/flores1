@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra de Productos</title>
+    <link rel="stylesheet" href="contactos.css">
+    <style>
+       
+    </style>
+</head>
+<body>
+
+<h1>Compra de Productos</h1>
+
+<!-- Formulario de Compra -->
+<div class="formulario-compra">
+    <form action="#" method="post">
+        <label for="nombre">Nombre Completo</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo Electrónico</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" name="telefono" required>
+
+        <label for="direccion">Dirección</label>
+        <input type="text" id="direccion" name="direccion" required>
+
+        <label for="producto">Producto</label>
+        <select id="producto" name="producto" required>
+            <option value="">Selecciona un producto</option>
+            <option value="arreglo1">Arreglo Floral 1</option>
+            <option value="arreglo2">Arreglo Floral 2</option>
+            <option value="arreglo3">Arreglo Floral 3</option>
+        </select>
+
+        <label for="banco">Banco para el Pago</label>
+        <select id="banco" name="banco" required>
+            <option value="">Selecciona tu banco</option>
+            <option value="banco1">Banco 1</option>
+            <option value="banco2">Banco 2</option>
+            <option value="banco3">Banco 3</option>
+        </select>
+
+        <button type="submit">Realizar Compra</button>
+    </form>
+</div>
+
+<!-- Logos de Bancos -->
+<div class="logos-bancos">
+    <img src="logo1.png" alt="Logo Banco 1">
+    <p>facebook</p>
+    <img src="logo2.png" alt="Logo Banco 2">
+    <p>instagram</p>
+    <img src="logo3.png" alt="Logo Banco 3">
+    <p>twiter</p>
+</div>
+
+<!-- Botón para regresar a la página principal -->
+<button onclick="window.location.href='index.html'">Volver a la Página Principal</button>
+<button onclick="window.location.href='centros de mesa.html'">Volver a la Página Arreglos modernos</button>
+<button onclick="window.location.href='arreglo.html'">Volver a la pagina Centros de Mesa</button>
+<button onclick="window.location.href='funebre.html'">Volver a la Página Arreglos funebres</button>
+
+
+<!-- Pie de Página Animado -->
+<footer>&copy; --2024 SECRET GARDEN--</footer>
+
+</body>
+</html>

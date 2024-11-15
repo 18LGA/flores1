@@ -1,0 +1,114 @@
+/* Estilos para la página de detalles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #c7fde8;
+}
+header {
+    background-color: #ff6f61;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.floral-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    text-align: center;
+  
+}
+
+.floral-description {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.floral-image-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.main-image, .hover-image {
+    width: 100%;
+    border-radius: 15px;
+    transition: opacity 0.5s ease;
+}
+
+.hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.floral-image-container:hover .main-image {
+    opacity: 0;
+}
+
+.floral-image-container:hover .hover-image {
+    opacity: 1;
+}
+
+.description {
+    max-width: 400px;
+    flex: 2;
+    padding: 15px;
+    background-color: rgba(245, 150, 182, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 5px 8px rgba(250, 0, 0, 0.2);
+    animation: borderGlowText 3s infinite alternate;
+}
+
+.description h2 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.description p {
+    font-size: 1rem;
+    color: #e98989;
+   
+}
+.comprar-btn {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    color: #fff;
+    background-color: #ff6f61;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+.comprar-btn:active {
+    transform: scale(0.9);
+    background-color: #d89bf0;
+}
+
+/* Estilos para el botón de regreso */
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #e55a4d;
+}

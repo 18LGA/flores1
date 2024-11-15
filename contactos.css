@@ -1,0 +1,76 @@
+ /* Animación del encabezado y pie de página */
+ @keyframes colorEncabezadoPie {
+    0% { color: #ff4081; }
+    50% { color: #42a5f5; }
+    100% { color: #ff4081; }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+h1, footer {
+    font-size: 24px;
+    margin: 20px 0;
+    animation: colorEncabezadoPie 5s infinite;
+    text-align: center;
+}
+
+.formulario-compra {
+    width: 100%;
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.formulario-compra label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 14px;
+}
+
+.formulario-compra input, .formulario-compra select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.logos-bancos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.logos-bancos img {
+    width: 80px;
+    height: auto;
+}
+
+button {
+    display: block;
+    width: 30%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #e0356c;
+}
